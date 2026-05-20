@@ -21,7 +21,7 @@ spec:
       containers:
       - name: ncpl
 
-        image: devopsacrraj.azurecr.io/java-app:v1
+        image: proj5acr.azurecr.io/java-app:v1                                    
 
         ports:
         - containerPort: 8080
