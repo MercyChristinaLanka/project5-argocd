@@ -1,19 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
+
 metadata:
   name: ncpl-deployment
+  namespace: java-app
+
 spec:
   replicas: 3
+
   selector:
     matchLabels:
       app: ncpl
+
   template:
     metadata:
       labels:
         app: ncpl
+
     spec:
       containers:
       - name: ncpl
-        image: newimagedevops/ncpltrail:latest
+
+        image: devopsacrraj.azurecr.io/java-app:v1
+
         ports:
-        - containerPort: 80
+        - containerPort: 8080
