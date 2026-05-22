@@ -20,8 +20,6 @@ spec:
     spec:
       containers:
       - name: ncpl
-
-        image: proj5acr.azurecr.io/java-app:latest                                 
-
+        image: proj5acr.azurecr.io/ncpl:14
         ports:
         - containerPort: 8080
