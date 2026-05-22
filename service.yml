@@ -2,12 +2,12 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: ncpl-service
+  name: java-app-service
   namespace: java-app
 
 spec:
   selector:
-    app: ncpl
+    app: java-app
 
   ports:
   - protocol: TCP
